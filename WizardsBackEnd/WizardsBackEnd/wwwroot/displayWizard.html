@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Wizard</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='wizard.css'>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-4">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="regularUser.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="signin.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="display" class="grid">
+        <div id="wiz" class="mt-4">
+        </div>
+        <div>
+            <hr style="margin-top: 50px">
+            <footer>
+                <p id="PageNum">Page x of y</p>
+            </footer>
+        </div>
+    </div>
+    <div id="answers" class="card text-white bg-primary mb-3 mt-4" style="width: 1300px; margin-left: 100px; margin-right: 100px; text-align: center; display:none;">
+        <div id="cardHeader" class="card-header" style="font-size: 50px;"></div>
+        <div id="cardBody" class="card-body">
+        </div>
+    </div>
+    <script src='displayWizard.js'></script>
+</body>
+
+</html>

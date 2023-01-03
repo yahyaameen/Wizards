@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Wizard</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='bootstrap.min.css'>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-4">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="wizardCreator.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="signin.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="createWizardButtons" class="card text-white bg-success mb-3 mt-4" style="max-width: 20rem; margin-left: 600px; text-align: center;display:block;">
+        <div class="card-header">Create Wizard</div>
+        <div class="card-body">
+            <div class="mt-4" style="text-align: center;">
+                <button id="addPage">Add page</button>
+                <button id="savePage">Save page</button>
+            </div>
+            <div id="elementDiv" class="mt-4" style="text-align: center; display:none">
+                <label for="element" class="form-label mt-4">Choose element</label>
+                <select class="form-select" id="element">
+              <option>TextBox</option>
+              <option>CheckBox List</option>
+              <option>MultiLine Free Text</option>
+              <option>RadioButtons List</option>
+            </select>
+                <button class=" mt-4" id="addElement">Add element</button>
+            </div>
+            <div id="save" style="display:none">
+                <button class=" mt-4" id="saveElement">Save element</button>
+            </div>
+            <div class="mt-4" style="text-align: center;">
+                <button id="createWizard">Create wizard</button>
+            </div>
+        </div>
+    </div>
+    <div class="card text-white bg-primary mb-3 mt-4" style="width: 1300px; margin-left: 100px; margin-right: 100px; text-align: center;">
+        <div class="card-header" style="font-size: 20px;">New Wizard</div>
+        <div class="card-body">
+            <div style="text-align: center;">
+                <label for="wizardTitle" class="form-label mt-4 ">Wizard Title</label>
+                <input type="text" class="form-control " id="wizardTitle" placeholder="Enter wizard title" style="width: 426px;margin-left: 450px;height: 38px;">
+            </div>
+            <div style="text-align: center;">
+                <label for="WizardDescription" class="form-label mt-4 ">Wizard description</label>
+                <textarea class="form-control " id="WizardDescription" name="WizardDescription" rows="4" cols="50" placeholder="Enter wizard description"></textarea>
+            </div>
+            <div class="mt-4" style="text-align: center;" id="content"></div>
+        </div>
+    </div>
+    <script src='create.js'></script>
+</body>
+
+</html>

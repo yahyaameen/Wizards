@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Wizard</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='bootstrap.min.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <h1 style="text-align: center; margin-top: 50px;">WIZARDS</h1>
+    <p style="text-align: center;">in this site you can register as wizard creator and start create wizards about the topics you want, or register as regular user and you can answer existing wizards. </p>
+    <div class="card text-white bg-primary mb-3 mt-4" style="max-width: 20rem; margin-left: 600px; text-align: center;">
+        <div class="card-header">Signin</div>
+        <div class="card-body">
+            <form style="text-align: center;">
+                <fieldset>
+                    <div class="form-group">
+                        <label for="username" class="form-label mt-4 ">Username</label>
+                        <input type="text" class="form-control " id="username" placeholder="Enter Username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="form-label mt-4">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <button class=" mt-4 " id="signIn" class="btn btn-primary ">Sign In</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <p style="width: 426px;margin-left: 650px;height: 38px;" class="wds-type wds-type--center mt-4">Do not have an account?
+        <a class="log-in" href="/index.html">Sign Up »</a>
+    </p>
+    <script src='signin.js'></script>
+</body>
+
+</html>
